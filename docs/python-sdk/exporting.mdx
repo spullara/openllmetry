@@ -99,4 +99,17 @@ TRACELOOP_BASE_URL="http://localhost:4317"
 ```
 
 </Accordion>
+
+<Accordion title="Observe">
+### With Observe
+
+First install the OpenTelemetry application in your Observe workspace. From that OpenTelemetry application, create a new  OpenTelemetry token. You will also need your customer id to construct the reporting URL (the prefix of all your Observe URLs):
+
+```bash
+TRACELOOP_BASE_URL=https://{customer id}.collect.observeinc.com/v1/otel
+TRACELOOP_HEADERS="authorization=Bearer%20{token}"
+```
+
+Your LLM telemetry will then show up in the OpenTelemetry dataset.
+</Accorion>
 </AccordionGroup>
